@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "4f5c6743-dd97-46a3-a201-f2a6e7e63c80",
+		"name": "MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48015915",
+		"_collection_link": "https://jovantegar335-7599724.postman.co/workspace/percobaan_API~70e28773-30cf-4a98-bba2-ed9ace3e9500/collection/48015915-4f5c6743-dd97-46a3-a201-f2a6e7e63c80?action=share&source=collection_link&creator=48015915"
+	},
+	"item": [
+		{
+			"name": "get movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3300/movies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"movies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get id movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3300/movies/68fb88d114b2baef5e3d9f4a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"movies",
+						"68fb88d114b2baef5e3d9f4a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post movies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Contoh Delete\",\r\n    \"director\":\"Delete Dong\",\r\n    \"year\":\"2111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put movies",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Kuasa Putih\",\r\n    \"director\": \"Tegar\",\r\n    \"year\": 2001\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/movies/68fb88d114b2baef5e3d9f4a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"movies",
+						"68fb88d114b2baef5e3d9f4a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete movies",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3300/movies/68fb8a3214b2baef5e3d9f52",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"movies",
+						"68fb8a3214b2baef5e3d9f52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get directors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3300/directors/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"directors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get id directors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3300/directors/68fb90e1a9387227ab49f728",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"directors",
+						"68fb90e1a9387227ab49f728"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post directors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Contoh Delete\",\r\n    \"birthYear\":\"2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/directors/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"directors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put directors",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Contoh\",\r\n    \"birthYear\":\"2020\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/directors/68fb90e1a9387227ab49f728",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"directors",
+						"68fb90e1a9387227ab49f728"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete directors",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Contoh Delete\",\r\n    \"birthYear\":\"2025\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3300/directors/68fb90e1a9387227ab49f728",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"directors",
+						"68fb90e1a9387227ab49f728"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
